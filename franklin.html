@@ -5,15 +5,17 @@
         <title>Forecast | Weather | Franklin, ID</title>
         <meta name="description" content="This is a page that informs about the weather for Franklin, ID.">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="main.css" >
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header>
-            <h1>&#9861; &#9856;Feeling Lucky?</h1>
-            <h2>Mobile Weather App Site Plan</h2>
-            <h3>Local Weather</h3>
-        </header>
-            <nav>
+            <div class="title">
+            <h1><span >&#9856;</span><span >&#9861;</span> Feeling Lucky?</h1>
+            <h2>Local Weather</h2>
+            </div>
+            </header>
+        <div>
+        <nav>
                 <table>
                     <tr>
                 <td><h3><a href="index.html">Home</a></h3></td>
@@ -23,16 +25,27 @@
                 <td><h3>&nbsp; Search</h3></td>
                     </tr>
                     </table>
-            </nav><br>
+        </nav>
+        </div>
         <main>
-            <h3><img src="Webpages/images/regional.gif" alt="regional" style="width:30px;height:30px;">Current Conditions</h3>
-            <h4>Wind &nbsp; 1-5 Southwest</h4>
-            <h4>Precipitation &nbsp; 0</h4><br>
-            <h3><img src="Webpages/images/franklinid.png" alt="franklinid" style="width:30px;height:30px;">Franklin, ID</h3>
+                <section class="center">
+                <h3><img src="Webpages/images/franklinid.png" alt="franklinid" style="width:30px;height:30px;">Franklin, ID</h3>
             <p><b>90</b></p>
-            <p>&#9728; 90 / 66</p>
-            <h4>Sunny</h4><br>
-            <h3><img src="Webpages/images/hourly.png" alt="hourly" style="width:30px;height:30px;">Hourly Forecast</h3>
+            </section>
+            <section class="center2">
+                <p>&#9728; 90/66</p>
+            <h4>Sunny</h4>
+            </section>
+            <section class="cur_conditions">
+            <h3><img src="Webpages/images/regional.gif" alt="regional" style="width:30px;height:30px;">Current Conditions</h3>
+            </section>
+            <section class="hidden">
+            <h4>Wind &nbsp; 1-5 Southwest</h4>
+            <h4>Precipitation &nbsp; 0</h4>
+            </section>
+            <section class="hourly">
+                <h3><img src="Webpages/images/hourly.png" alt="hourly" style="width:30px;height:30px;">Hourly Forecast</h3></section>
+                <section class="hidden">
                 <ul>
                     <li>00:00 &nbsp; 67°F</li>
                     <li>01:00 &nbsp; 67°F</li>
@@ -63,10 +76,15 @@
 
 
             </ul>
+            </section>
 
         </main>
         <footer>
             &copy;<a href="index.html">Link to Homepage</a>
-        </footer>
+            </footer>
+        <br>
+        <br>
+        <br>
+        <br>
     </body>
 </html>
