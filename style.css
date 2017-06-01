@@ -18,14 +18,19 @@ main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-image: url("Webpages/images/sunny-winter.jpg");
     background-size: cover;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+main > section {
+    flex: 1 0 30%;
 }
 
 nav { /*modify the nav bar, created a <div> */
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: static;
     bottom: 0;
     background-color: firebrick
 }
@@ -58,7 +63,7 @@ h1{ /* first header up top of the page */
 
 h2 { /* Created an h2, rather than going though the h1 + h1 css codes. Remove if needed and fix to original h1 + h1 tags */
     text-align: right;
-    margin-top: -.7em;
+    margin-top: 0em;
     background-color: cadetblue
 }
 
@@ -69,6 +74,7 @@ h4,
 h5,
 h6 {
     font-family: Sansita, times, serif;
+
 }
 
 footer { /* link to the homepage */
@@ -80,11 +86,12 @@ background-color: cadetblue
     text-align: center;
     font-size: .80em;
     background-color: rgba(200,200,200,.8);
-    margin: 2em auto;
+    margin: 0em auto;
     border: 1px solid;
     border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url("Webpages/images/sunny-winter.jpg");
 }
 
 .center2 { /* Spacing and centered high/low temperatures with image. */
@@ -92,29 +99,41 @@ background-color: cadetblue
     text-align: center;
     font-size: .95em;
     background-color: rgba(200,200,200,.8);
-    margin: 1em auto;
+    margin: 0em auto;
     border: 1px solid;
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .cur_conditions { /* current conditions section */
     background-color: rgba(200,200,200,.8);
-    margin: 4em auto;
+    margin: 0em auto;
     border: 1px solid;
     border-radius: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    order: -1
 }
 
 .hourly { /* hourly section */
     background-color: rgba(200,200,200,.9);
-    margin: .2em auto;
+    margin: 0em auto;
     border: 1px solid;
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-height: 12em;
+    overflow: auto;
+}
+
+.hourly ul li { /* this modifies the listed items */
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .hidden { /* Hidden hourly forecasts and current conditions */
@@ -126,4 +145,12 @@ body {
     padding: 0;  /* ditto for padding  */
     background-color: ghostwhite;
     font-size: 20px;
+}
+
+@media screen and (min-width: 34em) {
+    .title {
+        width: 20em;
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
 }
