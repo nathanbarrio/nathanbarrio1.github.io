@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;    /* changes width property to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-size: cover;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+main > section {
+    flex: 1 0 30%;
+}
+
+nav { /*modify the nav bar, created a <div> */
+    display: flex;
+    justify-content: center;
+    position: static;
+    bottom: 0;
+    background-color: #BB8B09;
+}
+
+nav a:link { /* navigation link styles */
+    text-decoration: none;
+    color: #47556F;
+}
+
+nav a:visited {
+    color: #1e90ff;
+}
+
+nav a:hover {
+    color: #f4a460;
+}
+
+nav a:active { /* end of navigation link style section */
+    color: #0000FF;
+}
+
+h2 { /* Created an h2 title tage for the top title bar */
+    text-align: right;
+    margin-top: .5em;
+    background-color: #AA6039;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, times , serif;
+
+}
+
+footer { /* link to the homepage */
+    padding: inherit;
+    background-color: #BB8B09;
+}
+
+.center { /* left section of the 2 boxes */
+    text-align: center;
+    font-size: .80em;
+    background-color: rgba(200,200,200,.8);
+    margin: 0em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url("Webpages/images/kk.png");
+
+}
+
+.center2 { /* middle section of the left box */
+    word-spacing: 0px;
+    text-align: center;
+    font-size: .95em;
+    background-color: rgba(200,200,200,.8);
+    margin: 0em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.cur_conditions { /* current conditions section */
+    background-color: rgba(200,200,200,.8);
+    margin: 0em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    order: -1
+}
+
+.hourly { /* hourly section */
+    background-color: rgba(200,200,200,.9);
+    margin: 0em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-height: 19em;
+    overflow: auto;
+    order: 2;
+}
+
+.hourly ul li { /* this modifies the listed items */
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hidden { /* Hidden hourly forecasts and current conditions */
+    visibility: hidden;
+}
+
+body {
+    margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
+    padding: 0;  /* ditto for padding  */
+    background-color: ghostwhite;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 34em) {
+    .title {
+        width: 20em;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+}
