@@ -73,6 +73,7 @@ footer { /* link to the homepage */
     background-color: #BB8B09;
 }
 
+
 .center { /* left section of the 2 boxes */
     text-align: center;
     font-size: .80em;
@@ -83,7 +84,9 @@ footer { /* link to the homepage */
     padding-left: 0px;
     padding-right: 0px;
     background-image: url("Webpages/images/kk.png");
-
+}
+left text {
+    text-decoration-color: #DD0000;
 }
 
 .center2 { /* middle section of the left box */
