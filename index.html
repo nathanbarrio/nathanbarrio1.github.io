@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Technology</title>
     <meta name="viewport" content="width=device-width">
-    <script type="text/javascript">
+    <script type="text/javascript>">
     </script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -53,7 +53,20 @@
                 <div class="centermain">HTC</div>
             </div>
 
+        </div>
+        <div id="hours">
+            <script src="jquery-3.2.1.min.js"></script>
+                <script>
+                    $.getJSON('index.json', function(data) {
+                    var output="<ul>";
+                    for (var i in data.hours) {
+                        output+="<li>"+ data.hours[i].day + " " + data.hours[i].hour.open + " " + data.hours[i].hour.close+"</li>";
+                    }
 
+                    output+="</ul>";
+                    document.getElementById("hours").innerHTML=output;
+                });
+            </script>
         </div>
 
 
