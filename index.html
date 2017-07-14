@@ -58,6 +58,7 @@
             <script src="jquery-3.2.1.min.js"></script>
                 <script>
                     $.getJSON('index.json', function(data) {
+                    console.log(data);
                     var output="<ul>";
                     for (var i in data.hours) {
                         output+="<li>"+ data.hours[i].day + " " + data.hours[i].hour.open + " " + data.hours[i].hour.close+"</li>";
