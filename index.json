@@ -43,7 +43,7 @@
     }
     },
     {
-    "day":"Monday",
+    "day":"Sunday",
     "hour": {
     "open":"closed",
     "close":"closed"
